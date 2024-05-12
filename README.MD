@@ -6,7 +6,7 @@ JKSM or JK's Save Manager for 3DS.
 * Dump and Restore Boss extra data
 * Set Play Coins to any amount 300 or lower
 
-This is checked branch from commit https://github.com/J-D-K/JKSM/commit/7a37c23c89134df8fd1f6508944c45725f14.
+This is a checked branch from [commit 7a37c23](https://github.com/J-D-K/JKSM/commit/7a37c23c89134df8fd1f6508944c45725f14).
 
 **See [releases](https://github.com/memoization/JKSM-Shared-Ext/releases) for the built files.**
 
