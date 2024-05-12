@@ -53,7 +53,7 @@ CFLAGS	:=	-g -Wall -O2 -mword-relocations \
 			-fomit-frame-pointer -ffunction-sections \
 			$(ARCH)
 
-CFLAGS	+=	$(INCLUDE) -DARM11 -D_3DS
+CFLAGS	+=	$(INCLUDE) -DARM11 -D__3DS__
 
 CXXFLAGS	:= $(CFLAGS) -fno-rtti -fno-exceptions -Wno-psabi -std=gnu++11
 
@@ -166,7 +166,7 @@ $(TARGET)-strip.elf: $(BUILD)
 	@$(STRIP) $(TARGET).elf -o $(TARGET)-strip.elf
 
 cia: $(TARGET)-strip.elf
-	@makerom -f cia -o $(TARGET).cia -elf $(TARGET)-strip.elf -rsf $(TARGET).rsf -exefslogo -target t -icon icon -banner banner
+	@"$(TOPDIR)/makerom.exe" -f cia -o $(TARGET).cia -elf $(TARGET)-strip.elf -rsf $(TARGET).rsf -exefslogo -target t -icon icon -banner banner
 	@echo Built JKSM.cia
 
 send:
