@@ -6,9 +6,12 @@ JKSM or JK's Save Manager for 3DS.
 * Dump and Restore Boss extra data
 * Set Play Coins to any amount 300 or lower
 
-This is a rewrite that is based on the original's code. I hope to support *hax again someday, but for the time being this is CFW and Rosalina only.
+This is checked branch from commit https://github.com/J-D-K/JKSM/commit/7a37c23c89134df8fd1f6508944c45725f14.
 
-**See [releases](https://github.com/J-D-K/JKSM/releases) for the latest version and QR code**
+**See [releases](https://github.com/memoization/JKSM-Shared-Ext/releases) for the built files.**
 
-## Requires:
-[libctru](https://github.com/smealum/ctrulib), [citro3d](https://github.com/fincs/citro3d), and [citro2d](https://github.com/devkitPro/citro2d)
+## Building:
+* Setup [devkitPro](https://www.3dbrew.org/wiki/Setting_up_Development_Environment)
+* Run this command. You may need to remove `dkp`:
+	* `dkp-pacman -S 3ds-curl 3ds-libjson-c 3ds-mbedtls 3ds-zlib`
+* Run *build-elf.bat* then run *build-rom.bat* for the cia file.
